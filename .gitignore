@@ -1,6 +1,3 @@
-test_Cpp_Demo/*/*.exe
-test_Cpp_Demo/*/*.obj
-
 *.DS_Store
 venv/
 .vscode/**/*.*

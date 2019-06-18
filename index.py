@@ -10,13 +10,23 @@ except BaseException as e:
     sys.exit()
 
 
+now_script = None
+
 
 def load_script():
+    global now_script
+
+    try:
+        now_script.unload()
+    except Exception as e:
+        pass
+
     try:
         script_string = get_file_string(sys.argv[2])
         script = session.create_script(script_string)
         script.load()
-    except BaseException as e:
+        now_script = script
+    except Exception as e:
         print(e)
 
 
