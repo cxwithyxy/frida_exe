@@ -18,6 +18,7 @@ def load_script():
 
     try:
         now_script.unload()
+        print("unload last script")
     except Exception as e:
         pass
 
@@ -26,6 +27,7 @@ def load_script():
         script = session.create_script(script_string)
         script.load()
         now_script = script
+        print("script has loaded successfully")
     except Exception as e:
         print(e)
 
