@@ -1,7 +1,7 @@
 altgraph==0.16.1
 file-tools==0.1.6
 frida==12.6.6
-future==0.17.1
+future==0.18.3
 macholib==1.11
 pefile==2019.4.18
 PyInstaller==3.4
